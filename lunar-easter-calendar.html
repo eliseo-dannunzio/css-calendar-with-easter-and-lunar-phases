@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="lunar-easter-calendar.css" />
+</head>
+
+<body>
+
+<div id="selection">
+	<!-- Months -->
+	<select name="month" class="month">
+		<option id="month-01" class="month-option">January</option>
+		<option id="month-02" class="month-option">February</option>
+		<option id="month-03" class="month-option" selected="selected">March</option>
+		<option id="month-04" class="month-option">April</option>
+		<option id="month-05" class="month-option">May</option>
+		<option id="month-06" class="month-option">June</option>
+		<option id="month-07" class="month-option">July</option>
+		<option id="month-08" class="month-option">August</option>
+		<option id="month-09" class="month-option">September</option>
+		<option id="month-10" class="month-option">October</option>
+		<option id="month-11" class="month-option">November</option>
+		<option id="month-12" class="month-option">December</option>
+	</select>
+	<!-- Century -->
+	<select name="century" class="century">
+		<option id="century-18" class="century-option">18</option>
+		<option id="century-19" class="century-option">19</option>
+		<option id="century-20" class="century-option" selected="selected">20</option>
+		<option id="century-21" class="century-option">21</option>
+		<option id="century-22" class="century-option">22</option>
+		<option id="century-23" class="century-option">23</option>
+		<option id="century-24" class="century-option">24</option>
+		<option id="century-25" class="century-option">25</option>
+		<option id="century-26" class="century-option">26</option>
+		<option id="century-27" class="century-option">27</option>
+		<option id="century-28" class="century-option">28</option>
+		<option id="century-29" class="century-option">29</option>
+	</select>
+	<!-- Decade -->
+	<select name="decade" class="decade">
+		<option id="decade-00" class="decade-option">0</option>
+		<option id="decade-10" class="decade-option">1</option>
+		<option id="decade-20" class="decade-option" selected="selected">2</option>
+		<option id="decade-30" class="decade-option">3</option>
+		<option id="decade-40" class="decade-option">4</option>
+		<option id="decade-50" class="decade-option">5</option>
+		<option id="decade-60" class="decade-option">6</option>
+		<option id="decade-70" class="decade-option">7</option>
+		<option id="decade-80" class="decade-option">8</option>
+		<option id="decade-90" class="decade-option">9</option>
+	</select>
+	<!-- Single -->
+	<select name="single" class="single">
+		<option id="single-00" class="single-option">0</option>
+		<option id="single-01" class="single-option">1</option>
+		<option id="single-02" class="single-option">2</option>
+		<option id="single-03" class="single-option">3</option>
+		<option id="single-04" class="single-option" selected="selected">4</option>
+		<option id="single-05" class="single-option">5</option>
+		<option id="single-06" class="single-option">6</option>
+		<option id="single-07" class="single-option">7</option>
+		<option id="single-08" class="single-option">8</option>
+		<option id="single-09" class="single-option">9</option>
+	</select>
+</div>
+
+<div class="calendar-wrapper">
+	<ul class="calendar">
+		<li class="weekday">Sun</li>
+		<li class="weekday">Mon</li>
+		<li class="weekday">Tue</li>
+		<li class="weekday">Wed</li>
+		<li class="weekday">Thu</li>
+		<li class="weekday">Fri</li>
+		<li class="weekday">Sat</li>
+
+		<li id="day-01">1</li>
+		<li id="day-02">2</li>
+		<li id="day-03">3</li>
+		<li id="day-04">4</li>
+		<li id="day-05">5</li>
+		<li id="day-06">6</li>
+		<li id="day-07">7</li>
+		<li id="day-08">8</li>
+		<li id="day-09">9</li>
+		<li id="day-10">10</li>
+		<li id="day-11">11</li>
+		<li id="day-12">12</li>
+		<li id="day-13">13</li>
+		<li id="day-14">14</li>
+		<li id="day-15">15</li>
+		<li id="day-16">16</li>
+		<li id="day-17">17</li>
+		<li id="day-18">18</li>
+		<li id="day-19">19</li>
+		<li id="day-20">20</li>
+		<li id="day-21">21</li>
+		<li id="day-22">22</li>
+		<li id="day-23">23</li>
+		<li id="day-24">24</li>
+		<li id="day-25">25</li>
+		<li id="day-26">26</li>
+		<li id="day-27">27</li>
+		<li id="day-28">28</li>
+		<li id="day-29">29</li>
+		<li id="day-30">30</li>
+		<li id="day-31">31</li>
+	</ul>
+	<div id="EasterDate">Easter for <span id="Year"></span> is on <span id="MonthMar"></span><span id="MonthApr"></span> <span id="Date"></span></div>
+	
+</div>
+
+</body>
+
+</html>
