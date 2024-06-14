@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="lunar-easter-calendar.css" />
+<link rel="stylesheet" href="luar-easter-calendar.css" />
 </head>
 
 <body>
@@ -65,6 +65,8 @@
 	</select>
 </div>
 
+<div id="cpu"></div>
+
 <div class="calendar-wrapper">
 	<ul class="calendar">
 		<li class="weekday">Sun</li>
@@ -75,40 +77,257 @@
 		<li class="weekday">Fri</li>
 		<li class="weekday">Sat</li>
 
-		<li id="day-01">1</li>
-		<li id="day-02">2</li>
-		<li id="day-03">3</li>
-		<li id="day-04">4</li>
-		<li id="day-05">5</li>
-		<li id="day-06">6</li>
-		<li id="day-07">7</li>
-		<li id="day-08">8</li>
-		<li id="day-09">9</li>
-		<li id="day-10">10</li>
-		<li id="day-11">11</li>
-		<li id="day-12">12</li>
-		<li id="day-13">13</li>
-		<li id="day-14">14</li>
-		<li id="day-15">15</li>
-		<li id="day-16">16</li>
-		<li id="day-17">17</li>
-		<li id="day-18">18</li>
-		<li id="day-19">19</li>
-		<li id="day-20">20</li>
-		<li id="day-21">21</li>
-		<li id="day-22">22</li>
-		<li id="day-23">23</li>
-		<li id="day-24">24</li>
-		<li id="day-25">25</li>
-		<li id="day-26">26</li>
-		<li id="day-27">27</li>
-		<li id="day-28">28</li>
-		<li id="day-29">29</li>
-		<li id="day-30">30</li>
-		<li id="day-31">31</li>
+		<li id="day-01" class="day">1<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-02" class="day">2<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-03" class="day">3<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-04" class="day">4<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-05" class="day">5<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-06" class="day">6<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-07" class="day">7<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-08" class="day">8<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-09" class="day">9<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-10" class="day">10<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-11" class="day">11<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-12" class="day">12<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-13" class="day">13<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-14" class="day">14<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-15" class="day">15<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-16" class="day">16<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-17" class="day">17<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-18" class="day">18<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-19" class="day">19<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-20" class="day">20<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-21" class="day">21<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-22" class="day">22<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-23" class="day">23<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-24" class="day">24<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-25" class="day">25<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-26" class="day">26<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-27" class="day">27<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-28" class="day">28<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-29" class="day">29<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-30" class="day">30<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
+		<li id="day-31" class="day">31<div class="moon-outer">
+				<div class="moon">
+					<div class="light hemisphere"></div>
+					<div class="dark hemisphere"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</li>
 	</ul>
 	<div id="EasterDate">Easter for <span id="Year"></span> is on <span id="MonthMar"></span><span id="MonthApr"></span> <span id="Date"></span></div>
-	
+
 </div>
 
 </body>
