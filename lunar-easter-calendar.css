@@ -61,18 +61,66 @@ select option:hover {
 }
 
 /* Computus Variables */
-#selection:has(#century-18:checked) ~ * {	--centuryIndex: 18; --centuryDiv4: 4; --centuryMod4: 2;}
-#selection:has(#century-19:checked) ~ * {	--centuryIndex: 19; --centuryDiv4: 4; --centuryMod4: 3;}
-#selection:has(#century-20:checked) ~ * {	--centuryIndex: 20; --centuryDiv4: 5; --centuryMod4: 0;}
-#selection:has(#century-21:checked) ~ * {	--centuryIndex: 21; --centuryDiv4: 5; --centuryMod4: 1;}
-#selection:has(#century-22:checked) ~ * {	--centuryIndex: 22; --centuryDiv4: 5; --centuryMod4: 2;}
-#selection:has(#century-23:checked) ~ * {	--centuryIndex: 23; --centuryDiv4: 5; --centuryMod4: 3;}
-#selection:has(#century-24:checked) ~ * {	--centuryIndex: 24; --centuryDiv4: 6; --centuryMod4: 0;}
-#selection:has(#century-25:checked) ~ * {	--centuryIndex: 25; --centuryDiv4: 6; --centuryMod4: 1;}
-#selection:has(#century-26:checked) ~ * {	--centuryIndex: 26; --centuryDiv4: 6; --centuryMod4: 2;}
-#selection:has(#century-27:checked) ~ * {	--centuryIndex: 27; --centuryDiv4: 6; --centuryMod4: 3;}
-#selection:has(#century-28:checked) ~ * {	--centuryIndex: 28; --centuryDiv4: 7; --centuryMod4: 0;}
-#selection:has(#century-29:checked) ~ * {	--centuryIndex: 29; --centuryDiv4: 7; --centuryMod4: 1;}
+#selection:has(#century-18:checked) ~ * {
+	--centuryIndex: 18;
+	--centuryDiv4: 4;
+	--centuryMod4: 2;
+}
+#selection:has(#century-19:checked) ~ * {
+	--centuryIndex: 19;
+	--centuryDiv4: 4;
+	--centuryMod4: 3;
+}
+#selection:has(#century-20:checked) ~ * {
+	--centuryIndex: 20;
+	--centuryDiv4: 5;
+	--centuryMod4: 0;
+}
+#selection:has(#century-21:checked) ~ * {
+	--centuryIndex: 21;
+	--centuryDiv4: 5;
+	--centuryMod4: 1;
+}
+#selection:has(#century-22:checked) ~ * {
+	--centuryIndex: 22;
+	--centuryDiv4: 5;
+	--centuryMod4: 2;
+}
+#selection:has(#century-23:checked) ~ * {
+	--centuryIndex: 23;
+	--centuryDiv4: 5;
+	--centuryMod4: 3;
+}
+#selection:has(#century-24:checked) ~ * {
+	--centuryIndex: 24;
+	--centuryDiv4: 6;
+	--centuryMod4: 0;
+}
+#selection:has(#century-25:checked) ~ * {
+	--centuryIndex: 25;
+	--centuryDiv4: 6;
+	--centuryMod4: 1;
+}
+#selection:has(#century-26:checked) ~ * {
+	--centuryIndex: 26;
+	--centuryDiv4: 6;
+	--centuryMod4: 2;
+}
+#selection:has(#century-27:checked) ~ * {
+	--centuryIndex: 27;
+	--centuryDiv4: 6;
+	--centuryMod4: 3;
+}
+#selection:has(#century-28:checked) ~ * {
+	--centuryIndex: 28;
+	--centuryDiv4: 7;
+	--centuryMod4: 0;
+}
+#selection:has(#century-29:checked) ~ * {
+	--centuryIndex: 29;
+	--centuryDiv4: 7;
+	--centuryMod4: 1;
+}
 
 /* Decade Dropdown */
 /* Contains four main variables:
@@ -87,346 +135,512 @@ select option:hover {
 	--L2DLeap: 0;
 }
 
-#selection:has(#decade-00:checked) ~ * { --decadeIndex: 0; }
-#selection:has(#decade-10:checked) ~ * { --decadeIndex: 10; }
-#selection:has(#decade-20:checked) ~ * { --decadeIndex: 20; }
-#selection:has(#decade-30:checked) ~ * { --decadeIndex: 30; }
-#selection:has(#decade-40:checked) ~ * { --decadeIndex: 40; }
-#selection:has(#decade-50:checked) ~ * { --decadeIndex: 50; }
-#selection:has(#decade-60:checked) ~ * { --decadeIndex: 60; }
-#selection:has(#decade-70:checked) ~ * { --decadeIndex: 70; }
-#selection:has(#decade-80:checked) ~ * { --decadeIndex: 80; }
-#selection:has(#decade-90:checked) ~ * { --decadeIndex: 90; }
+#selection:has(#decade-00:checked) ~ * {
+	--decadeIndex: 0;
+}
+#selection:has(#decade-10:checked) ~ * {
+	--decadeIndex: 10;
+}
+#selection:has(#decade-20:checked) ~ * {
+	--decadeIndex: 20;
+}
+#selection:has(#decade-30:checked) ~ * {
+	--decadeIndex: 30;
+}
+#selection:has(#decade-40:checked) ~ * {
+	--decadeIndex: 40;
+}
+#selection:has(#decade-50:checked) ~ * {
+	--decadeIndex: 50;
+}
+#selection:has(#decade-60:checked) ~ * {
+	--decadeIndex: 60;
+}
+#selection:has(#decade-70:checked) ~ * {
+	--decadeIndex: 70;
+}
+#selection:has(#decade-80:checked) ~ * {
+	--decadeIndex: 80;
+}
+#selection:has(#decade-90:checked) ~ * {
+	--decadeIndex: 90;
+}
 
-#selection:has(#single-00:checked) ~ * { --singleIndex: 0; }
-#selection:has(#single-01:checked) ~ * { --singleIndex: 1; }
-#selection:has(#single-02:checked) ~ * { --singleIndex: 2; }
-#selection:has(#single-03:checked) ~ * { --singleIndex: 3; }
-#selection:has(#single-04:checked) ~ * { --singleIndex: 4; }
-#selection:has(#single-05:checked) ~ * { --singleIndex: 5; }
-#selection:has(#single-06:checked) ~ * { --singleIndex: 6; }
-#selection:has(#single-07:checked) ~ * { --singleIndex: 7; }
-#selection:has(#single-08:checked) ~ * { --singleIndex: 8; }
-#selection:has(#single-09:checked) ~ * { --singleIndex: 9; }
+#selection:has(#single-00:checked) ~ * {
+	--singleIndex: 0;
+}
+#selection:has(#single-01:checked) ~ * {
+	--singleIndex: 1;
+}
+#selection:has(#single-02:checked) ~ * {
+	--singleIndex: 2;
+}
+#selection:has(#single-03:checked) ~ * {
+	--singleIndex: 3;
+}
+#selection:has(#single-04:checked) ~ * {
+	--singleIndex: 4;
+}
+#selection:has(#single-05:checked) ~ * {
+	--singleIndex: 5;
+}
+#selection:has(#single-06:checked) ~ * {
+	--singleIndex: 6;
+}
+#selection:has(#single-07:checked) ~ * {
+	--singleIndex: 7;
+}
+#selection:has(#single-08:checked) ~ * {
+	--singleIndex: 8;
+}
+#selection:has(#single-09:checked) ~ * {
+	--singleIndex: 9;
+}
 
 /* 00 to 09 */
 #selection:has(#decade-00:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 0;	--L2DLeap: 1;	--L2DDbl0: 1;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 0;
+	--L2DLeap: 1;
+	--L2DDbl0: 1;
 }
 #selection:has(#decade-00:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 1;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-00:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 2;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-00:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 3;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-00:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 4;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 4;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-00:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 5;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-00:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 6;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-00:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 0;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-00:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 1;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 1;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-00:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 2;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 2;
 }
 
 /* 10 to 19 */
 #selection:has(#decade-10:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 3;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-10:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 4;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-10:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 5;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 5;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-10:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 6;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-10:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 0;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-10:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 1;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-10:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 2;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 2;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-10:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 3;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-10:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 4;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-10:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 5;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 5;
 }
 
 /* 20 to 29 */
 #selection:has(#decade-20:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 6;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 6;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-20:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 0;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-20:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 1;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-20:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 2;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-20:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 3;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 3;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-20:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 4;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-20:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 5;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-20:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 6;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-20:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 0;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 0;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-20:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 1;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 1;
 }
 
 /* 30 to 39 */
 #selection:has(#decade-30:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 2;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-30:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 3;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-30:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 4;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 4;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-30:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 5;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-30:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 6;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-30:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 0;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-30:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 1;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 1;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-30:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 2;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-30:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 3;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-30:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 4;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 4;
 }
 
 /* 40 to 49 */
 #selection:has(#decade-40:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 5;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 5;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-40:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 6;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-40:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 0;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-40:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 1;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-40:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 2;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 2;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-40:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 3;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-40:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 4;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-40:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 5;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-40:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 6;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 6;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-40:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 0;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 0;
 }
 
 /* 50 to 59 */
 #selection:has(#decade-50:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 1;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-50:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 2;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-50:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 3;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 3;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-50:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 4;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-50:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 5;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-50:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 6;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-50:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 0;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 0;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-50:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 1;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-50:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 2;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-50:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 3;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 3;
 }
 
 /* 60 to 69 */
 #selection:has(#decade-60:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 4;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 4;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-60:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 5;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-60:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 6;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-60:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 0;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-60:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 1;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 1;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-60:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 2;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-60:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 3;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-60:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 4;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-60:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 5;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 5;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-60:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 6;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 6;
 }
 
 /* 70 to 79 */
 #selection:has(#decade-70:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 0;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-70:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 1;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-70:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 2; --L2DLeap: 1;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 2;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-70:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 3;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-70:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 4;
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-70:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 4; --L2Dm7: 5;	
+	--L2Ddiv4m7: 4;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-70:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 6;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 6;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-70:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 0;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-70:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 1;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-70:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 5; --L2Dm7: 2;
+	--L2Ddiv4m7: 5;
+	--L2Dm7: 2;
 }
 
 /* 80 to 89 */
 #selection:has(#decade-80:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 3;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 3;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-80:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 4;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-80:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 5;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 5;
 }
 #selection:has(#decade-80:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 6; --L2Dm7: 6;
+	--L2Ddiv4m7: 6;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-80:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 0;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 0;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-80:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 1;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 1;
 }
 #selection:has(#decade-80:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 2;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-80:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 0; --L2Dm7: 3;
+	--L2Ddiv4m7: 0;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-80:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 4;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 4;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-80:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 5;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 5;
 }
 
 /* 90 to 09 */
 #selection:has(#decade-90:checked):has(#single-00:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 6;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-90:checked):has(#single-01:checked) ~ * {
-	--L2Ddiv4m7: 1; --L2Dm7: 0;
+	--L2Ddiv4m7: 1;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-90:checked):has(#single-02:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 1;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 1;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-90:checked):has(#single-03:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 2;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 2;
 }
 #selection:has(#decade-90:checked):has(#single-04:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 3;	
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 3;
 }
 #selection:has(#decade-90:checked):has(#single-05:checked) ~ * {
-	--L2Ddiv4m7: 2; --L2Dm7: 4;
+	--L2Ddiv4m7: 2;
+	--L2Dm7: 4;
 }
 #selection:has(#decade-90:checked):has(#single-06:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 5;	--L2DLeap: 1;	
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 5;
+	--L2DLeap: 1;
 }
 #selection:has(#decade-90:checked):has(#single-07:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 6;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 6;
 }
 #selection:has(#decade-90:checked):has(#single-08:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 0;
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 0;
 }
 #selection:has(#decade-90:checked):has(#single-09:checked) ~ * {
-	--L2Ddiv4m7: 3; --L2Dm7: 1
+	--L2Ddiv4m7: 3;
+	--L2Dm7: 1;
 }
 
 /* Months */
@@ -440,44 +654,76 @@ select option:hover {
 	g) monthIndex: Kinda self-explanatory...
 */
 #selection:has(.month-option:checked) ~ * {
-	--v29: 1; --v30: 1; --isFeb: 0; --monthLeap: 0; /* defaults */
+	--v29: 1;
+	--v30: 1;
+	--isFeb: 0;
+	--monthLeap: 0; /* defaults */
 }
 #selection:has(#month-01:checked) ~ * {
-	--monthKey: 1; --v31: 1; --monthLeap: 1; --monthIndex: 1;
+	--monthKey: 1;
+	--v31: 1;
+	--monthLeap: 1;
+	--monthIndex: 1;
 }
 #selection:has(#month-02:checked) ~ * {
-	--monthKey: 4; --v29: 0; --v30: 0; --v31: 0; --monthLeap: 1; --isFeb: 1; --monthIndex: 2;
+	--monthKey: 4;
+	--v29: 0;
+	--v30: 0;
+	--v31: 0;
+	--monthLeap: 1;
+	--isFeb: 1;
+	--monthIndex: 2;
 	/* If the year is calculated as a leap year, v29 gets bumped up to 1 later on */
 }
 #selection:has(#month-03:checked) ~ * {
-	--monthKey: 4; --v31: 1; --monthIndex: 3;
+	--monthKey: 4;
+	--v31: 1;
+	--monthIndex: 3;
 }
 #selection:has(#month-04:checked) ~ * {
-	--monthKey: 0; --v31: 0; --monthIndex: 4;
+	--monthKey: 0;
+	--v31: 0;
+	--monthIndex: 4;
 }
 #selection:has(#month-05:checked) ~ * {
-	--monthKey: 2; --v31: 1; --monthIndex: 5;
+	--monthKey: 2;
+	--v31: 1;
+	--monthIndex: 5;
 }
 #selection:has(#month-06:checked) ~ * {
-	--monthKey: 5; --v31: 0; --monthIndex: 6;
+	--monthKey: 5;
+	--v31: 0;
+	--monthIndex: 6;
 }
 #selection:has(#month-07:checked) ~ * {
-	--monthKey: 0; --v31: 1; --monthIndex: 7;
+	--monthKey: 0;
+	--v31: 1;
+	--monthIndex: 7;
 }
 #selection:has(#month-08:checked) ~ * {
-	--monthKey: 3; --v31: 1; --monthIndex: 8;
+	--monthKey: 3;
+	--v31: 1;
+	--monthIndex: 8;
 }
 #selection:has(#month-09:checked) ~ * {
-	--monthKey: 6; --v31: 0; --monthIndex: 9;
+	--monthKey: 6;
+	--v31: 0;
+	--monthIndex: 9;
 }
 #selection:has(#month-10:checked) ~ * {
-	--monthKey: 1; --v31: 1; --monthIndex: 10;
+	--monthKey: 1;
+	--v31: 1;
+	--monthIndex: 10;
 }
 #selection:has(#month-11:checked) ~ * {
-	--monthKey: 4; --v31: 0; --monthIndex: 11;
+	--monthKey: 4;
+	--v31: 0;
+	--monthIndex: 11;
 }
 #selection:has(#month-12:checked) ~ * {
-	--monthKey: 6; --v31: 1; --monthIndex: 12;
+	--monthKey: 6;
+	--v31: 1;
+	--monthIndex: 12;
 }
 
 /* Calculation section */
@@ -485,7 +731,6 @@ select option:hover {
 #selection:has(.decade-option:checked) ~ *,
 #selection:has(.single-option:checked) ~ *,
 #selection:has(.month-option:checked) ~ * {
-
 	/* STANDARD CALCULATION OF DOW ALGORITHM */
 	/*
 	1) Take the last two digits of the year, and divide by 4, discarding any fraction.
@@ -526,13 +771,18 @@ select option:hover {
 */
 
 	/* New isLeapYear calculation */
-	--isLeapYear: max(min(var(--centuryLeap), var(--L2DLeap)), min(var(--L2DLeap), 1 - var(--L2DDbl0)));
-	
+	--isLeapYear: max(
+		min(var(--centuryLeap), var(--L2DLeap)),
+		min(var(--L2DLeap), 1 - var(--L2DDbl0))
+	);
+
 	/* Calculate month value with leap year taken into consideration */
 	/* Essentially monthKey - isLeapYear * monthLeap, aka: monthKey - MIN(isLeapYear, monthLeap) */
 
-	--monthKeyRevised: max(var(--monthKey) - min(var(--isLeapYear), var(--monthLeap)));
-	
+	--monthKeyRevised: max(
+		var(--monthKey) - min(var(--isLeapYear), var(--monthLeap))
+	);
+
 	/* *** CALCULATION OF DAY OF WEEK *** */
 	/* Now we simply do the following:
 
@@ -541,11 +791,13 @@ select option:hover {
 	4) Add the century key. This is --centuryKey
 	5) Get the last two digits of the year again and get the modulo 7 of that value. Add this result. This is --L2Dm7
 	*/
-	--preMod7: max(var(--L2Ddiv4m7) + var(--monthKeyRevised) + var(--centuryKey) + var(--L2Dm7));
+	--preMod7: max(
+		var(--L2Ddiv4m7) + var(--monthKeyRevised) + var(--centuryKey) + var(--L2Dm7)
+	);
 	/* 6) Get the mod 7 value of the final sum (0 = Sunday, 6 = Saturday) and perform a day shift 
 		by adding 1 so that we have a column position to start the calendar, 1 through to 7 */
 	--DOW: max(mod(var(--preMod7), 7) + 1);
-	
+
 	/* Easter Calculation */
 	/* 
 		Okay, I never thought I'd get this far, but let's try something interesting!
@@ -569,8 +821,11 @@ select option:hover {
 	
 	For the floor functions we'll take advantage of the fact we're always going to be dividing x by y and using the following formula: Floor(x/y) = (x - x MOD y)/y
 	*/
-	
-	--stepA: mod(var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex), 19);
+
+	--stepA: mod(
+		var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex),
+		19
+	);
 	--stepB: var(--centuryIndex);
 	--stepC: max(var(--decadeIndex) + var(--singleIndex));
 	--stepD: var(--centuryDiv4);
@@ -579,22 +834,31 @@ select option:hover {
 	--stepF_: max((var(--stepF) - mod(var(--stepF), 25)) / 250);
 	--stepG: max((var(--stepB) - var(--stepF_) + 1));
 	--stepG_: max((var(--stepG) - mod(var(--stepG), 3)) / 3);
-	--stepH: max(mod(19 * var(--stepA) + var(--stepB) - var(--stepD) - var(--stepG_) + 15, 30));
+	--stepH: max(
+		mod(19 * var(--stepA) + var(--stepB) - var(--stepD) - var(--stepG_) + 15, 30)
+	);
 	--stepI: max((var(--stepC) - mod(var(--stepC), 4)) / 4);
 	/* No Step J, just for shits and giggles, no seriously, because the MJB Computus algorithm didn't have a Step J, that's all... */
 	--stepK: mod(var(--stepC), 4);
-	--stepL: max(mod(32 + 2 * var(--stepE) + 2 * var(--stepI) - var(--stepH) - var(--stepK), 7));
+	--stepL: max(
+		mod(32 + 2 * var(--stepE) + 2 * var(--stepI) - var(--stepH) - var(--stepK), 7)
+	);
 	--stepM: max((var(--stepA) + 11 * var(--stepH) + 22 * var(--stepL)));
 	--stepM_: max((var(--stepM) - mod(var(--stepM), 451)) / 451);
 	--stepN: max((var(--stepH) + var(--stepL) - 7 * var(--stepM_) + 114));
 	--easterMonth: max((var(--stepN) - mod(var(--stepN), 31)) / 31);
 	--easterDate: max(mod(var(--stepN), 31) + 1);
-	
-	--isApril: max(var(--easterMonth) - 3); /* If Easter's in April, this will be 1, else 0 */
-	--isMarch: max(1 - var(--isApril)); /* If Easter's in March, this will be 1, else 0 */
-	
-	/* So, it turns out 1 - min(1, max(x - y, y - x)) is a cool way to determine if x == y,
-		it returns 1 if it's true, and 0 if it's false */
+
+	/* If Easter's in April, this will be 1, else 0 */
+	--isApril: max(var(--easterMonth) - 3);
+	/* If Easter's in March, this will be 1, else 0 */
+	--isMarch: max(1 - var(--isApril));
+
+	/* 
+		So, it turns out 1 - min(1, max(x - y, y - x)) is a cool 
+		way to determine if x == y, it returns 1 if it's true, 
+		and 0 if it's false 
+	*/
 	--is31: max(1 - min(1, max(var(--easterDate) - 31, 31 - var(--easterDate))));
 	--is30: max(1 - min(1, max(var(--easterDate) - 30, 30 - var(--easterDate))));
 	--is29: max(1 - min(1, max(var(--easterDate) - 29, 29 - var(--easterDate))));
@@ -626,81 +890,63 @@ select option:hover {
 	--is3: max(1 - min(1, max(var(--easterDate) - 3, 3 - var(--easterDate))));
 	--is2: max(1 - min(1, max(var(--easterDate) - 2, 2 - var(--easterDate))));
 	--is1: max(1 - min(1, max(var(--easterDate) - 1, 1 - var(--easterDate))));
-	
+
 	/* These are the counter resets for the debug window */
-	counter-reset: 
-/* 		centuryKey var(--centuryKey, -1) 
-		centuryLeap	var(--centuryLeap, -1)
-		L2Ddiv4m7 var(--L2Ddiv4m7, -1)
-		L2Dm7 var(--L2Dm7, -1)
-		L2DLeap var(--L2DLeap, -1)
-		L2DDbl0 var(--L2DDbl0, -1)
-		monthKey var(--monthKey, -1)
-		v29 var(--v29, -1)
-		v30 var(--v30, -1)
-		v31 var(--v31, -1)
-		isFeb var(--isFeb, -1)
-		monthLeap var(--monthLeap, -1)
-		isLeapYear var(--isLeapYear, -1)
-		monthKeyRevised var(--monthKeyRevised, -1)
-		preMod7 var(--preMod7, -1)
-		DOW var(--DOW, -1) */
-		centuryIndex var(--centuryIndex, -1)
-		decadeIndex var(--decadeIndex, -1)
-		singleIndex var(--singleIndex, -1)
-		/* stepA var(--stepA, -999)
-		stepB var(--stepB, -999)
-		stepC var(--stepC, -999)
-		stepD var(--stepD, -999)
-		stepE var(--stepE, -999)
-		stepF var(--stepF_, -999)
-		stepG var(--stepG_, -999)
-		stepH var(--stepH, -999)
-		stepI var(--stepI, -999)
-		stepK var(--stepK, -999)
-		stepL var(--stepL, -999)
-		stepM var(--stepM_, -999) */
-/* 		easterMonth var(--easterMonth, -999) */
-		easterDate var(--easterDate, -999) /* LEAVE ON FOR EASTER DATE DISPLAY */
-/* 		isApril var(--isApril, -999) */
-/* 		isMarch var(--isMarch, -999) */
-		
-/*		is31 var(--is31, -1)
-		is30 var(--is30, -1)
-		is29 var(--is29, -1)
-		is28 var(--is28, -1)
-		is27 var(--is27, -1)
-		is26 var(--is26, -1)
-		is25 var(--is25, -1)
-		is24 var(--is24, -1)
-		is23 var(--is23, -1)
-		is22 var(--is22, -1)
-		is21 var(--is21, -1)
-		is20 var(--is20, -1)
-		is19 var(--is19, -1)
-		is18 var(--is18, -1)
-		is17 var(--is17, -1)
-		is16 var(--is16, -1)
-		is15 var(--is15, -1)
-		is14 var(--is14, -1)
-		is13 var(--is13, -1)
-		is12 var(--is12, -1)
-		is11 var(--is11, -1)
-		is10 var(--is10, -1)
-		is9 var(--is9, -1)
-		is8 var(--is8, -1)
-		is7 var(--is7, -1)
-		is6 var(--is6, -1)
-		is5 var(--is5, -1)
-		is4 var(--is4, -1)
-		is3 var(--is3, -1)
-		is2 var(--is2, -1)
-		is1 var(--is1, -1)*/
-		
-		/* LEAVE ON FOR EASTER DATE DISPLAY */
-		selectedYear max(var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex));
+	counter-reset: centuryKey var(--centuryKey, -1) centuryLeap
+		var(--centuryLeap, -1) L2Ddiv4m7 var(--L2Ddiv4m7, -1) L2Dm7 var(--L2Dm7, -1)
+		L2DLeap var(--L2DLeap, -1) L2DDbl0 var(--L2DDbl0, -1) monthKey
+		var(--monthKey, -1) v29 var(--v29, -1) v30 var(--v30, -1) v31 var(--v31, -1)
+		isFeb var(--isFeb, -1) monthLeap var(--monthLeap, -1) isLeapYear
+		var(--isLeapYear, -1) monthKeyRevised var(--monthKeyRevised, -1) preMod7
+		var(--preMod7, -1) DOW var(--DOW, -1) centuryIndex var(--centuryIndex, -1)
+		decadeIndex var(--decadeIndex, -1) singleIndex var(--singleIndex, -1) stepA
+		var(--stepA, -999) stepB var(--stepB, -999) stepC var(--stepC, -999) stepD
+		var(--stepD, -999) stepE var(--stepE, -999) stepF var(--stepF_, -999) stepG
+		var(--stepG_, -999) stepH var(--stepH, -999) stepI var(--stepI, -999) stepK
+		var(--stepK, -999) stepL var(--stepL, -999) stepM var(--stepM_, -999)
+		easterMonth var(--easterMonth, -999) easterDate var(--easterDate, -999)
+		isApril var(--isApril, -999) isMarch var(--isMarch, -999) is31 var(--is31, -1)
+		is30 var(--is30, -1) is29 var(--is29, -1) is28 var(--is28, -1) is27
+		var(--is27, -1) is26 var(--is26, -1) is25 var(--is25, -1) is24 var(--is24, -1)
+		is23 var(--is23, -1) is22 var(--is22, -1) is21 var(--is21, -1) is20
+		var(--is20, -1) is19 var(--is19, -1) is18 var(--is18, -1) is17 var(--is17, -1)
+		is16 var(--is16, -1) is15 var(--is15, -1) is14 var(--is14, -1) is13
+		var(--is13, -1) is12 var(--is12, -1) is11 var(--is11, -1) is10 var(--is10, -1)
+		is9 var(--is9, -1) is8 var(--is8, -1) is7 var(--is7, -1) is6 var(--is6, -1)
+		is5 var(--is5, -1) is4 var(--is4, -1) is3 var(--is3, -1) is2 var(--is2, -1)
+		is1 var(--is1, -1) selectedYear
+		max(var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex));
 }
 
+#cpu {
+	display: none;
+	height: 10rem;
+	width: 100%;
+	clear: both;
+	background-color: yellow;
+	color: black;
+	font-size: 10px;
+	&:after {
+		white-space: pre;
+		content: "centuryKey: " counter(centuryKey) "; " "centuryLeap: "
+			counter(centuryLeap) "; " "L2Ddiv4m7: " counter(L2Ddiv4m7) "; " "L2Dm7: "
+			counter(L2Dm7) "; " "L2DLeap: " counter(L2DLeap) "; " "L2DDbl0: "
+			counter(L2DDbl0) "; " "monthKey: " counter(monthKey) "; " "v29: "
+			counter(v29) "; " "v30: " counter(v30) "; " "v31: " counter(v31) "; "
+			"isFeb: " counter(isFeb) "; \a""monthLeap: " counter(monthLeap) "; " "isLeapYear: "
+			counter(isLeapYear) "; " "monthKeyRevised: " counter(monthKeyRevised) "; " "preMod7: "
+			counter(preMod7) "; " "DOW: " counter(DOW) "; " "centuryIndex: " counter(
+				centuryIndex
+			) "; " "decadeIndex: " counter(decadeIndex) "; " "singleIndex: " counter(
+				singleIndex
+			) "; \a""stepA: " counter(stepA) "; " "stepB: " counter(stepB) "; " "stepC: "
+			counter(stepC) "; " "stepD: " counter(stepD) "; " "stepE: " counter(stepE)
+			"; " "stepF: " counter(stepF_) "; " "stepG: " counter(stepG_) "; " "stepH: "
+			counter(stepH) "; " "stepI: " counter(stepI) "; " "stepK: " counter(stepK)
+			"; " "stepL: " counter(stepL) "; " "stepM: " counter(stepM_) "; "
+			"easterMonth: " counter(easterMonth) "; " "easterDate: " counter(easterDate);
+	}
+}
 /* Calendar Styling */
 
 .calendar-wrapper {
@@ -711,62 +957,35 @@ select option:hover {
 	font-size: 2rem;
 	border: 2px solid black;
 	background-color: white;
-}
 
-.calendar {
-	color: #000;
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	z-index: 10;
-}
+	.calendar {
+		color: #000;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		z-index: 10;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
 
-.weekday {
-	background: #eee;
-	padding: 2px 8px 0 2px;
-	margin-bottom: 4px;
-	text-align: right;
-	font-weight: 700;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-
-	li:not(.weekday) {
-		text-align: right;
-		padding-right: 5px;
-		display: table-cell;
-		border-collapse: collapse;
-	
-		/* Anyone like Easter eggs? */
-		&:before {
-			width: 15px;
-			height: 21px;
-			display: block;
-			background-color: rgb(255, 255, 0);
-			background-image: repeating-linear-gradient(40deg, transparent, transparent 4px, rgba(255, 0, 0, 1) 2px, rgba(255, 0, 0, 1) 8px );
-			border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
-			border: 2px solid black;
-			transform: translate(5.5rem, 0) rotate(10deg);
-			opacity: 0;
-			content: "";
-			margin-top: 4px;
-			margin-bottom: 2px;
+		li.weekday {
+			background: #eee;
+			padding: 2px 8px 0 2px;
+			margin-bottom: 4px;
+			text-align: right;
+			font-weight: 700;
 		}
-		
-	}
 
-}
+		#day-01 {
+			grid-column-start: var(--DOW);
+		}
 
-#day-01 {
-	grid-column-start: var(--DOW);
-}
-
-#day-29 {
-	opacity: max(var(--v29) + min(var(--isLeapYear), var(--isFeb)) - min(var(--v29), var(--isFeb)));
-	/* 
+		#day-29 {
+			opacity: max(
+				var(--v29) + min(var(--isLeapYear), var(--isFeb)) -
+					min(var(--v29), var(--isFeb))
+			);
+			/* 
 		Explanation:
 			29 L F Show29?
 		   0 0 0 0 (These conditions will never happen together)
@@ -792,14 +1011,45 @@ ul {
 	
 		Using a = var(--v29), b = var(--isLeapYear) and c = var(--isFeb) we get the calculation above.
 	*/
-}
+		}
 
-#day-30 {
-	opacity: var(--v30);
-}
+		#day-30 {
+			opacity: var(--v30);
+		}
 
-#day-31 {
-	opacity: var(--v31);
+		#day-31 {
+			opacity: var(--v31);
+		}
+
+		li:not(.weekday) {
+			text-align: right;
+			padding-right: 8px;
+			display: table-cell;
+			border-collapse: collapse;
+
+			/* Anyone like Easter eggs? */
+			&:before {
+				width: 15px;
+				height: 21px;
+				display: block;
+				background-color: rgb(255, 255, 0);
+				background-image: repeating-linear-gradient(
+					40deg,
+					transparent,
+					transparent 4px,
+					rgba(255, 0, 0, 1) 2px,
+					rgba(255, 0, 0, 1) 8px
+				);
+				border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+				border: 2px solid black;
+				transform: translate(2rem, 0) rotate(10deg);
+				opacity: 0;
+				content: "";
+				margin-top: 4px;
+				margin-bottom: 2px;
+			}
+		}
+	}
 }
 
 /* 
@@ -810,70 +1060,194 @@ ul {
 	simply becomes a case of turning on the opactiy for the egg on the repespective date.
 */
 #selection:has(#month-03:checked) ~ * {
-	#day-01:before { opacity: min(var(--isMarch), var(--is1)); }
-	#day-02:before { opacity: min(var(--isMarch), var(--is2)); }
-	#day-03:before { opacity: min(var(--isMarch), var(--is3)); }
-	#day-04:before { opacity: min(var(--isMarch), var(--is4)); }
-	#day-05:before { opacity: min(var(--isMarch), var(--is5)); }
-	#day-06:before { opacity: min(var(--isMarch), var(--is6)); }
-	#day-07:before { opacity: min(var(--isMarch), var(--is7)); }
-	#day-08:before { opacity: min(var(--isMarch), var(--is8)); }
-	#day-09:before { opacity: min(var(--isMarch), var(--is9)); }
-	#day-10:before { opacity: min(var(--isMarch), var(--is10)); }
-	#day-11:before { opacity: min(var(--isMarch), var(--is11)); }
-	#day-12:before { opacity: min(var(--isMarch), var(--is12)); }
-	#day-13:before { opacity: min(var(--isMarch), var(--is13)); }
-	#day-14:before { opacity: min(var(--isMarch), var(--is14)); }
-	#day-15:before { opacity: min(var(--isMarch), var(--is15)); }
-	#day-16:before { opacity: min(var(--isMarch), var(--is16)); }
-	#day-17:before { opacity: min(var(--isMarch), var(--is17)); }
-	#day-18:before { opacity: min(var(--isMarch), var(--is18)); }
-	#day-19:before { opacity: min(var(--isMarch), var(--is19)); }
-	#day-20:before { opacity: min(var(--isMarch), var(--is20)); }
-	#day-21:before { opacity: min(var(--isMarch), var(--is21)); }
-	#day-22:before { opacity: min(var(--isMarch), var(--is22)); }
-	#day-23:before { opacity: min(var(--isMarch), var(--is23)); }
-	#day-24:before { opacity: min(var(--isMarch), var(--is24)); }
-	#day-25:before { opacity: min(var(--isMarch), var(--is25)); }
-	#day-26:before { opacity: min(var(--isMarch), var(--is26)); }
-	#day-27:before { opacity: min(var(--isMarch), var(--is27)); }
-	#day-28:before { opacity: min(var(--isMarch), var(--is28)); }
-	#day-29:before { opacity: min(var(--isMarch), var(--is29)); }
-	#day-30:before { opacity: min(var(--isMarch), var(--is30)); }
-	#day-31:before { opacity: min(var(--isMarch), var(--is31)); }
+	#day-01:before {
+		opacity: min(var(--isMarch), var(--is1));
+	}
+	#day-02:before {
+		opacity: min(var(--isMarch), var(--is2));
+	}
+	#day-03:before {
+		opacity: min(var(--isMarch), var(--is3));
+	}
+	#day-04:before {
+		opacity: min(var(--isMarch), var(--is4));
+	}
+	#day-05:before {
+		opacity: min(var(--isMarch), var(--is5));
+	}
+	#day-06:before {
+		opacity: min(var(--isMarch), var(--is6));
+	}
+	#day-07:before {
+		opacity: min(var(--isMarch), var(--is7));
+	}
+	#day-08:before {
+		opacity: min(var(--isMarch), var(--is8));
+	}
+	#day-09:before {
+		opacity: min(var(--isMarch), var(--is9));
+	}
+	#day-10:before {
+		opacity: min(var(--isMarch), var(--is10));
+	}
+	#day-11:before {
+		opacity: min(var(--isMarch), var(--is11));
+	}
+	#day-12:before {
+		opacity: min(var(--isMarch), var(--is12));
+	}
+	#day-13:before {
+		opacity: min(var(--isMarch), var(--is13));
+	}
+	#day-14:before {
+		opacity: min(var(--isMarch), var(--is14));
+	}
+	#day-15:before {
+		opacity: min(var(--isMarch), var(--is15));
+	}
+	#day-16:before {
+		opacity: min(var(--isMarch), var(--is16));
+	}
+	#day-17:before {
+		opacity: min(var(--isMarch), var(--is17));
+	}
+	#day-18:before {
+		opacity: min(var(--isMarch), var(--is18));
+	}
+	#day-19:before {
+		opacity: min(var(--isMarch), var(--is19));
+	}
+	#day-20:before {
+		opacity: min(var(--isMarch), var(--is20));
+	}
+	#day-21:before {
+		opacity: min(var(--isMarch), var(--is21));
+	}
+	#day-22:before {
+		opacity: min(var(--isMarch), var(--is22));
+	}
+	#day-23:before {
+		opacity: min(var(--isMarch), var(--is23));
+	}
+	#day-24:before {
+		opacity: min(var(--isMarch), var(--is24));
+	}
+	#day-25:before {
+		opacity: min(var(--isMarch), var(--is25));
+	}
+	#day-26:before {
+		opacity: min(var(--isMarch), var(--is26));
+	}
+	#day-27:before {
+		opacity: min(var(--isMarch), var(--is27));
+	}
+	#day-28:before {
+		opacity: min(var(--isMarch), var(--is28));
+	}
+	#day-29:before {
+		opacity: min(var(--isMarch), var(--is29));
+	}
+	#day-30:before {
+		opacity: min(var(--isMarch), var(--is30));
+	}
+	#day-31:before {
+		opacity: min(var(--isMarch), var(--is31));
+	}
 }
 #selection:has(#month-04:checked) ~ * {
-	#day-01:before { opacity: min(var(--isApril), var(--is1)); }
-	#day-02:before { opacity: min(var(--isApril), var(--is2)); }
-	#day-03:before { opacity: min(var(--isApril), var(--is3)); }
-	#day-04:before { opacity: min(var(--isApril), var(--is4)); }
-	#day-05:before { opacity: min(var(--isApril), var(--is5)); }
-	#day-06:before { opacity: min(var(--isApril), var(--is6)); }
-	#day-07:before { opacity: min(var(--isApril), var(--is7)); }
-	#day-08:before { opacity: min(var(--isApril), var(--is8)); }
-	#day-09:before { opacity: min(var(--isApril), var(--is9)); }
-	#day-10:before { opacity: min(var(--isApril), var(--is10)); }
-	#day-11:before { opacity: min(var(--isApril), var(--is11)); }
-	#day-12:before { opacity: min(var(--isApril), var(--is12)); }
-	#day-13:before { opacity: min(var(--isApril), var(--is13)); }
-	#day-14:before { opacity: min(var(--isApril), var(--is14)); }
-	#day-15:before { opacity: min(var(--isApril), var(--is15)); }
-	#day-16:before { opacity: min(var(--isApril), var(--is16)); }
-	#day-17:before { opacity: min(var(--isApril), var(--is17)); }
-	#day-18:before { opacity: min(var(--isApril), var(--is18)); }
-	#day-19:before { opacity: min(var(--isApril), var(--is19)); }
-	#day-20:before { opacity: min(var(--isApril), var(--is20)); }
-	#day-21:before { opacity: min(var(--isApril), var(--is21)); }
-	#day-22:before { opacity: min(var(--isApril), var(--is22)); }
-	#day-23:before { opacity: min(var(--isApril), var(--is23)); }
-	#day-24:before { opacity: min(var(--isApril), var(--is24)); }
-	#day-25:before { opacity: min(var(--isApril), var(--is25)); }
-	#day-26:before { opacity: min(var(--isApril), var(--is26)); }
-	#day-27:before { opacity: min(var(--isApril), var(--is27)); }
-	#day-28:before { opacity: min(var(--isApril), var(--is28)); }
-	#day-29:before { opacity: min(var(--isApril), var(--is29)); }
-	#day-30:before { opacity: min(var(--isApril), var(--is30)); }
-	#day-31:before { opacity: min(var(--isApril), var(--is31)); }
+	#day-01:before {
+		opacity: min(var(--isApril), var(--is1));
+	}
+	#day-02:before {
+		opacity: min(var(--isApril), var(--is2));
+	}
+	#day-03:before {
+		opacity: min(var(--isApril), var(--is3));
+	}
+	#day-04:before {
+		opacity: min(var(--isApril), var(--is4));
+	}
+	#day-05:before {
+		opacity: min(var(--isApril), var(--is5));
+	}
+	#day-06:before {
+		opacity: min(var(--isApril), var(--is6));
+	}
+	#day-07:before {
+		opacity: min(var(--isApril), var(--is7));
+	}
+	#day-08:before {
+		opacity: min(var(--isApril), var(--is8));
+	}
+	#day-09:before {
+		opacity: min(var(--isApril), var(--is9));
+	}
+	#day-10:before {
+		opacity: min(var(--isApril), var(--is10));
+	}
+	#day-11:before {
+		opacity: min(var(--isApril), var(--is11));
+	}
+	#day-12:before {
+		opacity: min(var(--isApril), var(--is12));
+	}
+	#day-13:before {
+		opacity: min(var(--isApril), var(--is13));
+	}
+	#day-14:before {
+		opacity: min(var(--isApril), var(--is14));
+	}
+	#day-15:before {
+		opacity: min(var(--isApril), var(--is15));
+	}
+	#day-16:before {
+		opacity: min(var(--isApril), var(--is16));
+	}
+	#day-17:before {
+		opacity: min(var(--isApril), var(--is17));
+	}
+	#day-18:before {
+		opacity: min(var(--isApril), var(--is18));
+	}
+	#day-19:before {
+		opacity: min(var(--isApril), var(--is19));
+	}
+	#day-20:before {
+		opacity: min(var(--isApril), var(--is20));
+	}
+	#day-21:before {
+		opacity: min(var(--isApril), var(--is21));
+	}
+	#day-22:before {
+		opacity: min(var(--isApril), var(--is22));
+	}
+	#day-23:before {
+		opacity: min(var(--isApril), var(--is23));
+	}
+	#day-24:before {
+		opacity: min(var(--isApril), var(--is24));
+	}
+	#day-25:before {
+		opacity: min(var(--isApril), var(--is25));
+	}
+	#day-26:before {
+		opacity: min(var(--isApril), var(--is26));
+	}
+	#day-27:before {
+		opacity: min(var(--isApril), var(--is27));
+	}
+	#day-28:before {
+		opacity: min(var(--isApril), var(--is28));
+	}
+	#day-29:before {
+		opacity: min(var(--isApril), var(--is29));
+	}
+	#day-30:before {
+		opacity: min(var(--isApril), var(--is30));
+	}
+	#day-31:before {
+		opacity: min(var(--isApril), var(--is31));
+	}
 }
 
 #EasterDate {
@@ -881,13 +1255,15 @@ ul {
 	text-align: center;
 	font-weight: 700;
 	font-style: italic;
+	display: block;
 }
 
 #Year:before {
 	display: inline-block;
 	content: counter(selectedYear);
 }
-#MonthMar, #MonthApr {
+#MonthMar,
+#MonthApr {
 	font-size: 0;
 }
 #MonthMar:before {
@@ -905,7 +1281,7 @@ ul {
 	content: counter(easterDate);
 }
 
-	/* Lunar Phase Calculations
+/* Lunar Phase Calculations
 		I so didn't see myself doing this... but I figured I'd give it a go... 
 
 		What we're going to do here is determine a whole crapload of calculations for every
@@ -915,58 +1291,116 @@ ul {
 		This will involve the following:
 		a) Calculation of the respective date's equivalent Julian Date
 		b) Calculation of the Moon's age in its current cycle
-		c) Display of the moon with its respective phase above the respective date
+		c) Display of the moon with its respective phase to the right of the respective date
 
 */
 
 [id^="day-"] {
-	--lpYear: max(var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex));
+	--lpYear: max(
+		var(--centuryIndex) * 100 + var(--decadeIndex) + var(--singleIndex)
+	);
 	--lpMonth: var(--monthIndex);
 	--solarDays: 365.25;
 	--lunarCycle: 29.5305882;
 	--lunarMonth: 30.6001;
-	--moonSize: 25;
+	--moonSize: 40;
 }
 
-#day-01 { --lpDay: 1; }
-#day-02 { --lpDay: 2; }
-#day-03 { --lpDay: 3; }
-#day-04 { --lpDay: 4; }
-#day-05 { --lpDay: 5; }
-#day-06 { --lpDay: 6; }
-#day-07 { --lpDay: 7; }
-#day-08 { --lpDay: 8; }
-#day-09 { --lpDay: 9; }
-#day-10 { --lpDay: 10; }
-#day-11 { --lpDay: 11; }
-#day-12 { --lpDay: 12; }
-#day-13 { --lpDay: 13; }
-#day-14 { --lpDay: 14; }
-#day-15 { --lpDay: 15; }
-#day-16 { --lpDay: 16; }
-#day-17 { --lpDay: 17; }
-#day-18 { --lpDay: 18; }
-#day-19 { --lpDay: 19; }
-#day-20 { --lpDay: 20; }
-#day-21 { --lpDay: 21; }
-#day-22 { --lpDay: 22; }
-#day-23 { --lpDay: 23; }
-#day-24 { --lpDay: 24; }
-#day-25 { --lpDay: 25; }
-#day-26 { --lpDay: 26; }
-#day-27 { --lpDay: 27; }
-#day-28 { --lpDay: 28; }
-#day-29 { --lpDay: 29; }
-#day-30 { --lpDay: 30; }
-#day-31 { --lpDay: 31; }
-
-@counter-style lunar-phase { /* Our lunar phases */
-  system: cyclic;
-  symbols: "\1F311" "\1F312" "\1F313" "\1F314" "\1F315" "\1F316" "\1F317" "\1F318";
-  suffix: "";
+#day-01 {
+	--lpDay: 1;
+}
+#day-02 {
+	--lpDay: 2;
+}
+#day-03 {
+	--lpDay: 3;
+}
+#day-04 {
+	--lpDay: 4;
+}
+#day-05 {
+	--lpDay: 5;
+}
+#day-06 {
+	--lpDay: 6;
+}
+#day-07 {
+	--lpDay: 7;
+}
+#day-08 {
+	--lpDay: 8;
+}
+#day-09 {
+	--lpDay: 9;
+}
+#day-10 {
+	--lpDay: 10;
+}
+#day-11 {
+	--lpDay: 11;
+}
+#day-12 {
+	--lpDay: 12;
+}
+#day-13 {
+	--lpDay: 13;
+}
+#day-14 {
+	--lpDay: 14;
+}
+#day-15 {
+	--lpDay: 15;
+}
+#day-16 {
+	--lpDay: 16;
+}
+#day-17 {
+	--lpDay: 17;
+}
+#day-18 {
+	--lpDay: 18;
+}
+#day-19 {
+	--lpDay: 19;
+}
+#day-20 {
+	--lpDay: 20;
+}
+#day-21 {
+	--lpDay: 21;
+}
+#day-22 {
+	--lpDay: 22;
+}
+#day-23 {
+	--lpDay: 23;
+}
+#day-24 {
+	--lpDay: 24;
+}
+#day-25 {
+	--lpDay: 25;
+}
+#day-26 {
+	--lpDay: 26;
+}
+#day-27 {
+	--lpDay: 27;
+}
+#day-28 {
+	--lpDay: 28;
+}
+#day-29 {
+	--lpDay: 29;
+}
+#day-30 {
+	--lpDay: 30;
+}
+#day-31 {
+	--lpDay: 31;
 }
 
-[id^="day-"] {
+.day {
 	/* Calculation of Julian Date */
 	--lpMonthShift: max((12 - var(--lpMonth)) / 10);
 	--YY: max(var(--lpYear) - (var(--lpMonthShift) - mod(var(--lpMonthShift), 1)));
@@ -979,30 +1413,77 @@ ul {
 	--K3_: max((var(--K3) - mod(var(--K3), 1)) * 0.75);
 	--K3__: max((var(--K3_) - mod(var(--K3_), 1)) - 38);
 	--J: max(var(--K1_) + var(--K2_) + var(--lpDay) + 59);
-	--J_: max(var(--J) - (max(0, min(1, mod(max(var(--J) - 2299160), 2299161)))) * var(--K3__));
-	
+	--J_: max(
+		var(--J) - (max(0, min(1, mod(max(var(--J) - 2299160), 2299161)))) *
+			var(--K3__)
+	);
+
 	/* Calculation of Moon's "Age" */
 	--IP: max((var(--J_) + 4.867) / var(--lunarCycle));
 	--IP_: max(mod(var(--IP), 1));
 	/* This returns 1 if IP_ < 0.5, otherwise -1 */
-	--IP_LT_Half: max(1 - 2 * max(0, min(1, var(--IP_) + 0.5)) + 2 * mod(max(0, min(1, var(--IP_) + 0.5)), 1));
-	--MoonAge: max(var(--IP_) * var(--lunarCycle) + (var(--IP_LT_Half) * 0.5 * var(--lunarCycle)));
+	--IP_LT_Half: max(
+		1 - 2 * max(0, min(1, var(--IP_) + 0.5)) + 2 *
+			mod(max(0, min(1, var(--IP_) + 0.5)), 1)
+	);
+	--MoonAge: max(
+		var(--IP_) * var(--lunarCycle) + (var(--IP_LT_Half) * 0.5 * var(--lunarCycle))
+	);
 	--MoonAge_: max(var(--MoonAge) - mod(var(--MoonAge), 1) + 1);
-	/* We're using Unicode Moon Phases to represent the eight distinct phases, as we don't have access to other pseudo-elements apart from :after */
-	--lunarPhase: max(mod(var(--MoonAge_) / 3.75, 8));
-	counter-reset: lunarPhase max(var(--lunarPhase) + 1);
-	margin-right: 8px;
-	
-	&:after {
-		content: counter(lunarPhase, lunar-phase);
- 		width: max(var(--moonSize) * 1.2 * 1px);
-		height: max(var(--moonSize) * 1.2 * 1px);
-		overflow: hidden;
+	--MoonPhasePC: max(
+		mod(var(--MoonAge_), var(--lunarCycle)) / var(--lunarCycle)
+	);
+	--rotation: max(360 - var(--MoonPhasePC) * 360);
+	--rotation_: max(var(--rotation) - mod(var(--rotation), 1));
+	--rotationGE180: max(0, min(1, mod(max(var(--rotation_) - 180, 0), 181)));
+	--scaleX: max(1 - 2 * var(--rotationGE180));
+	.moon-outer {
 		display: inline-block;
-		font-size: max(var(--moonSize) * 1px);
-		border-radius: 50%;
-		background-color: rgba(0,0,0,0.15);
-		transform: translateX(5px) translateY(2px);
-		margin-left: 4px;
+		vertical-align: top;
+		margin-top: 4px;
+		.moon {
+			border-radius: 100%;
+			width: max(var(--moonSize) * 1px);
+			height: max(var(--moonSize) * 1px);
+			border: 1px solid black;
+			display: flex;
+			margin-left: 4px;
+			position: relative;
+			overflow: hidden;
+			align-items: center;
+
+			transform: translateY(-8px) scaleX(var(--scaleX));
+
+			& .hemisphere {
+				width: 50%;
+				height: 100%;
+				&.light {
+					background-color: #f4f690;
+				}
+				&.dark {
+					background-color: #575851;
+				}
+			}
+			& .divider,
+			& .divider:after {
+				top: 0;
+				left: 0;
+				width: max(var(--moonSize) * 1px);
+				height: max(var(--moonSize) * 1px);
+				position: absolute;
+				border-radius: 100%;
+				transform-style: preserve-3d;
+				backface-visibility: hidden;
+			}
+			& .divider {
+				background-color: #575851;
+				transform: rotate3d(0, 1, 0, max(var(--rotation) * 1deg));
+				&:after {
+					content: "";
+					background-color: #f4f690;
+					transform: rotateY(180deg);
+				}
+			}
+		}
 	}
 }
