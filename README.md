@@ -1,5 +1,7 @@
 # css-calendar-with-easter-and-lunar-phases
 
+Live Demo: https://codepen.io/eliseodannunzio/pen/KKLaRpG
+
 So, some time back I created a VERY clunky CSS/HTML calendar, it was using a lot of unnecessary checkboxes and labels  for the initial UI. While it worked, it was very UI un-friendly.
 
 Fast forward a few years, **:has()** is now a reality and functions like **mod()**, **min()** and **max()** are more prominent. The rules have changed and there are a few more features:
